@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- 
+		회원정보 입력 폼 만들기
+		id, pw, name, age, hobby[checkbox]
+		action="memberInfo.jsp" method="post"
+	 -->
+	
+	<h2>회원정보 입력 폼</h2>
+	
+	<form action="memberInfo.jsp" method="post" >
+		
+		아이디 : <input type="text" name="id"><br>
+		비밀번호 : <input type="text" name="pw"><br>
+		이름 : <input type="text" name="name"><br>
+		나이 : <input type="number" name="age"><br>
+		
+		취미 : <input type="checkbox" name="hobby" value="게임">게임
+		<input type="checkbox" name="hobby" value="낚시">낚시
+		<input type="checkbox" name="hobby" value="등산">등산
+		<input type="checkbox" name="hobby" value="축구">축구
+		<br>
+		
+		<input type="submit" value="회원정보 전송">
+	
+	</form>
+	
+</body>
+</html>
